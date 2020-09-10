@@ -21,6 +21,7 @@ public class Purchase {
     public void onPostPersist(){
         Bought bought = new Bought();
         BeanUtils.copyProperties(this, bought);
+
         bought.publishAfterCommit();
 
         //Following code causes dependency to external APIs
