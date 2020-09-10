@@ -33,8 +33,6 @@ public class PolicyHandler{
 
             purchaseRepository.save(purchase);
 
-
         }
     }
-
 }

@@ -32,7 +32,6 @@ public class Purchase {
 
         //동기 호출의 중요한 방식.
         delivery.setOrderId(this.getOrderId());
-        delivery.setId(this.getId());
         delivery.setStatus("shipped");
         delivery.setPurchaseId(this.getId());
 

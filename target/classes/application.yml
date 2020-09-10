@@ -42,6 +42,16 @@ api:
   url:
     delivery: http://localhost:8082
 
+
+feign:
+  hystrix:
+    enabled: true
+
+hystrix:
+  command:
+    default:
+      execution.isolation.thread.timeoutInMilliseconds: 610
+
 ---
 
 spring:
@@ -71,3 +81,13 @@ spring:
 api:
   url:
     delivery: http://delivery:8080
+
+
+feign:
+  hystrix:
+    enabled: true
+
+hystrix:
+  command:
+    default:
+      execution.isolation.thread.timeoutInMilliseconds: 610
